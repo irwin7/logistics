@@ -1,0 +1,48 @@
+#site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.header {
+    padding: 40px 0;
+    @include d-flex-between;
+
+    &__logo-link {
+        @include n-text;
+        font-size: 24px;
+    }
+
+    &__menu-btn {
+        @include n-text;
+        @include btn;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        i{
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+    }
+}
+.nav {
+
+    &__list {
+        @include d-flex-between
+    }
+
+    &__item {
+
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+    }
+
+    &__link {
+        @include n-text;
+    }
+}

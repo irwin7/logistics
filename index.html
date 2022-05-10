@@ -12,7 +12,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -22,10 +23,24 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header id="site-header">
     <div class="container">
       <div class="header">
-
+        <a href="index.html" class="header__logo-link">P.E.T</a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Company</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Our Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__menu-btn">Menu <i class='bx bx-menu'></i></button>
       </div>
     </div>
   </header>
@@ -34,7 +49,9 @@
     <section id="hero">
       <div class="container">
         <div class="hero">
-
+          <p class="hero__upper-txt">Delivering full construction logistics solutions on large and complex projects, with build values of over £1 billion.</p>
+          <p class="hero__mid-txt">Transceka & egs Construction Logistics</p>
+          <a href="#" class="hero__more-link"><span>Find Out More</span> <i class='bx bxs-chevron-right' ></i></a>
         </div>
       </div>
     </section>

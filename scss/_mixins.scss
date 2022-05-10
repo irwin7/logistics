@@ -3,3 +3,39 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin n-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+
+@mixin bg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin btn {
+  background-color: transparent;
+  border: none;
+}
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin d-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
