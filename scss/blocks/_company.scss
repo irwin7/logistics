@@ -1,0 +1,117 @@
+.company {
+
+    &__title {
+        position: relative;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000;
+        margin-bottom: 36px;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            border-radius: 50%;
+            margin-left: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__box {
+        display: flex;
+        margin-bottom: 100px;
+
+        &:nth-child(2n - 1) {
+            flex-direction: row-reverse
+        }
+    }
+
+    &__txts {
+        width: 50%;
+    }
+
+    &__pre-text {
+        @include n-text-400;
+        max-width: 335px;
+        margin-bottom: 40px;
+    }
+
+    &__inner-box {
+        padding-left: 85px;
+    }
+
+    &__static-title {
+        max-width: 435px;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 70px;
+        color: #000;
+        margin-bottom: 20px;
+
+        span {
+            border: 1px solid #000;
+        }
+    }
+
+    &__description {
+        max-width: 340px;
+        @include n-text-400;
+        padding-left: 15px;
+        border-left: 1px solid #000;
+        margin-bottom: 60px;
+    }
+
+    &__more-link {
+        @include more-btn;
+        color: #000;
+
+        i {
+            border-color: #000;
+        }
+    }
+
+    &__img {
+        width: 50%;
+    }
+
+    &__img-box {
+        position: relative;
+        width: 389px;
+        height: 556px;
+        border: 1px solid #000000;
+        margin-left: 90px;
+    }
+
+    &__image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 120px;
+        width: 385px;
+        height: 432px;
+    }
+
+    &__slider {
+        width: 390px;
+        height: 555px;
+    }
+
+    &__slider-wrapper {}
+
+    &__slide {
+        object-fit: cover;
+    }
+
+    &__slider-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.mySwiper {}
