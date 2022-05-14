@@ -1,0 +1,101 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    &--active{
+        top: 0;
+        visibility: visible
+    }
+
+    &__inner {}
+
+    &__header {
+        @include d-flex-between;
+        padding: 40px 0;
+    }
+
+    &__logo-link {
+        @include n-text;
+        font-size: 24px;
+        color: #000
+    }
+
+    &__menu-btn {
+        @include n-text;
+        @include btn;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        color: #000;
+
+        i {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+    }
+
+    &__hero {
+        display: flex;
+    }
+
+    &__box {
+        width: 50%;
+
+        &:nth-child(2){
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    &__list {
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+        &--active{
+            &::before{
+                content: "";
+                display: inline-block;
+                width: 120px;
+                border: 1px solid #000;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 78px;
+        color: #000;
+    }
+
+    &__contact {
+    }
+
+    &__contact-item {
+        margin-bottom: 20px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        padding: 10px;
+        padding-bottom: 5px;
+    }
+
+    &__contact-link {
+        color: #000;
+        font-size: 30px;
+    }
+}
