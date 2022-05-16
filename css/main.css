@@ -823,4 +823,48 @@ a {
 }
 .related__link:hover {
   color: #666;
+}
+
+#last-news {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../image/inner-image-truck.png");
+}
+
+.last-news {
+  padding: 145px 0 75px 170px;
+}
+.last-news__txt {
+  max-width: 285px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.last-news__title {
+  max-width: 785px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 60px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.last-news__more-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.last-news__more-link i {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

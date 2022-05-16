@@ -1,0 +1,27 @@
+#last-news{
+    @include bg-cover;
+    background-image: url('../../image/inner-image-truck.png');
+}
+.last-news {
+    padding: 145px 0 75px 170px;
+
+		&__txt {
+            max-width: 285px;
+            @include n-text-400;
+            color: #fff;
+            margin-bottom: 40px;
+		}
+
+		&__title {
+            max-width: 785px;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 60px;
+            color: #fff;
+            margin-bottom: 60px;
+		}
+
+		&__more-link {
+            @include more-btn;
+		}
+}
