@@ -1,10 +1,11 @@
-#site-header{
+#site-header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 5;
 }
+
 .header {
     padding: 40px 0;
     @include d-flex-between;
@@ -22,27 +23,49 @@
         justify-content: space-between;
         cursor: pointer;
 
-        i{
+        i {
             display: inline-block;
             margin-left: 10px;
             font-size: 24px;
         }
     }
 }
+
 .nav {
 
     &__list {
-        @include d-flex-between
+        @include d-flex-between;
     }
 
     &__item {
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 40px;
         }
     }
 
     &__link {
         @include n-text;
+    }
+}
+
+#site-header.active {
+    position: relative;
+
+    .header {
+
+        &__logo-link {
+            color: #000;
+        }
+
+        &__menu-btn {
+            color: #000;
+        }
+    }
+
+    .nav {
+        &__link {
+            color: #000;
+        }
     }
 }
