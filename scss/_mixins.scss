@@ -61,6 +61,13 @@
   color: #fff;
 }
 
+@mixin n-text-400-22 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
 @mixin more-btn {
   display: flex;
   align-items: center;

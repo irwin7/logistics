@@ -1,0 +1,40 @@
+#footer {
+    background-color: #333;
+}
+
+.footer {
+    padding-top: 85px;
+    padding-bottom: 95px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-link {
+        @include n-text;
+        font-size: 24px;
+    }
+
+    &__title {
+        @include n-text-22;
+        color: #fff;
+        opacity: 0.3;
+        margin-bottom: 15px;
+    }
+
+    &__inner-item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        @include n-text-400-22;
+        transition: all 0.4s ease;
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}

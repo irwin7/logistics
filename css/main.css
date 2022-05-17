@@ -874,6 +874,9 @@ a {
   border-radius: 50%;
 }
 
+.contact {
+  margin-bottom: 1px;
+}
 .contact__title {
   position: relative;
   font-weight: 600;
@@ -978,4 +981,46 @@ a {
   line-height: 22px;
   color: #fff;
   color: #000;
+}
+
+#footer {
+  background-color: #333;
+}
+
+.footer {
+  padding-top: 85px;
+  padding-bottom: 95px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+.footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  color: #fff;
+  opacity: 0.3;
+  margin-bottom: 15px;
+}
+.footer__inner-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.footer__link:hover {
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
