@@ -49,23 +49,12 @@
     }
 }
 
-#site-header.active {
-    position: relative;
-
-    .header {
-
-        &__logo-link {
-            color: #000;
-        }
-
-        &__menu-btn {
-            color: #000;
-        }
+@media screen and (max-width: 670px) {
+    .nav{
+        display: none;
     }
-
-    .nav {
-        &__link {
-            color: #000;
-        }
+    .header {
+        padding: 28px 0;
+        @include d-flex-between;
     }
 }
