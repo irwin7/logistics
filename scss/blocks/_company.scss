@@ -136,8 +136,8 @@
         }
     
         &__static-title {
-            font-size: 50px;
-            line-height: 60px;
+            font-size: 40px;
+            line-height: 50px;
         }
     
         &__description {
@@ -145,13 +145,14 @@
         }
     
         &__img-box {
-            width: 285px;
+            width: 255px;
             height: 385px;
         }
     
         &__image {
             width: 260px;
             height: 340px;
+            left: 40px;
         }
     
         &__slider {

@@ -1,28 +1,56 @@
-#last-news{
-    @include bg-cover;
-    background-image: url('../../image/inner-image-truck.png');
+#last-news {
+  @include bg-cover;
+  background-image: url("../../image/inner-image-truck.png");
 }
 .last-news {
-    padding: 145px 0 75px 170px;
-    margin-bottom: 100px;
+  padding: 145px 0 75px 170px;
+  margin-bottom: 100px;
 
-		&__txt {
-            max-width: 285px;
-            @include n-text-400;
-            color: #fff;
-            margin-bottom: 40px;
-		}
+  &__txt {
+    max-width: 285px;
+    @include n-text-400;
+    color: #fff;
+    margin-bottom: 40px;
+  }
 
-		&__title {
-            max-width: 785px;
-            font-weight: 600;
-            font-size: 64px;
-            line-height: 60px;
-            color: #fff;
-            margin-bottom: 60px;
-		}
+  &__title {
+    max-width: 785px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 60px;
+    color: #fff;
+    margin-bottom: 60px;
+  }
 
-		&__more-link {
-            @include more-btn;
-		}
+  &__more-link {
+    @include more-btn;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .last-news {
+    padding: 100px 0 75px 50px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 574px) {
+  .last-news {
+    padding: 50px 0;
+
+    &__txt {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__more-link {
+      @include more-btn;
+    }
+  }
 }
