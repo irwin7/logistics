@@ -408,6 +408,10 @@ a {
   z-index: 5;
 }
 
+#site-header.active {
+  background-color: #333;
+}
+
 .header {
   padding: 40px 0;
   display: flex;
